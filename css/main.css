@@ -1,0 +1,373 @@
+body {
+    /* height: 3000px; */
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: rgb(177, 174, 174);
+}
+
+.cont {
+    padding: 0 35px;
+}
+
+.he {
+    min-height: 100vh;
+    background-image: url(../imgs/4.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.he::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+}
+
+.he .cont .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.he .cont .header .links {
+    width: 100%;
+}
+
+.he .cont .header .links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 35%;
+    height: 100%;
+}
+
+.he .cont .header .links ul li {
+    padding-top: 5%;
+}
+
+.he .cont .header .links ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    padding-top: 40%;
+    position: relative;
+    z-index: 100;
+}
+
+.he .cont .header .logo img {
+    width: 70px;
+    position: relative;
+    z-index: 1;
+    margin-top: 35%;
+    border-radius: 50%;
+}
+
+.he .cont .header .logo {
+
+    position: relative;
+
+}
+
+.he .cont .header .logo::before {
+    content: "";
+    width: 100%;
+    height: 73%;
+    position: absolute;
+    top: 24%;
+    left: 0;
+    background-color: #777;
+    opacity: 0.5;
+    z-index: 1000;
+    border-radius: 50%;
+
+}
+
+.he .cont .head {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.he .cont .head h2 {
+    color: var(--main-color);
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+
+.he .cont .head p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.cont .img {
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+
+.cont .img img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.cont .img .imgs {
+    position: relative;
+}
+
+
+
+.cont .img p {
+
+    color: #777;
+}
+
+.cont .img .loop {
+    text-align: center;
+    width: 60%;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--main-color);
+}
+
+.cont #about-us {
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.he .cont .stu {
+    position: fixed;
+    width: 22%;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: -22%;
+    z-index: 1000;
+    transition-duration: 0.5s;
+    box-shadow: #aaa 0px 0px 35px inset;
+}
+
+
+.he .cont .stu h2 {
+    margin: 0px 0 20px;
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+    color: #555;
+}
+
+.he .cont .stu.active {
+    left: 0;
+}
+
+.he .cont .stu i {
+    background-color: white;
+    right: -25px;
+    position: absolute;
+    height: 23px;
+    width: 25px;
+    text-align: center;
+    padding-top: 7px;
+    color: var(--main-color);
+    cursor: pointer;
+    box-shadow: #aaa 0px 0px 6px inset;
+}
+
+.he .cont .stu .one {
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+    position: relative;
+    min-height: 10%;
+    margin: 5px 10px;
+    border-radius: 4px;
+}
+
+.he .cont .stu .one span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    z-index: 10002;
+    display: inline-block;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.he .cont .stu .one span.active {
+    opacity: 1;
+}
+
+.he .cont .stu .one span:first-of-type {
+    background-color: rgb(177, 174, 174);
+}
+
+.he .cont .stu .one span:nth-of-type(2) {
+    background-color: rgb(28, 171, 123);
+}
+
+.he .cont .stu .one span:nth-of-type(3) {
+
+    background-color: rgb(196, 0, 65);
+}
+
+.he .cont .stu .one span:nth-of-type(4) {
+
+    background-color: rgb(10, 153, 158);
+}
+
+.he .cont .stu .one span:last-of-type {
+
+    background-color: rgb(154, 2, 134);
+}
+
+.one button {
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+}
+
+.one button.active {
+    opacity: 1;
+}
+
+.gallry {
+    padding: 55px;
+    background-color: #e5e0e0;
+}
+
+.gallry h2 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.gallry .imgs img {
+    width: 20%;
+    height: 25vh;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.gallry .imgs img:hover {
+    transform: scale(1.1, 1.1);
+
+}
+
+.gallry .cont {
+    text-align: center;
+}
+
+.all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+.inset {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 1;
+    z-index: 2005;
+}
+
+.x {
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    right: 1%;
+    top: 0;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.imog {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    width: 90%;
+    height: 100%;
+    z-index: 2008;
+}
+
+.skills {
+    min-height: 50vh;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.skills>div {
+    margin: 5% 0;
+}
+
+.skills div h5 {
+    display: inline;
+    margin: 20px;
+    position: relative;
+    top: 15px;
+    color: #555;
+}
+
+.skills>div div {
+    position: relative;
+    width: 90%;
+    margin: 23px;
+    height: 7vh;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+
+.skills>div .two2 {
+    position: absolute;
+    border-radius: 20px;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 7vh;
+    background-color: var(--main-color);
+    transition: all 0.7s;
+}
